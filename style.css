@@ -1,0 +1,642 @@
+@font-face {    
+    font-family: NunitoSans ; src: url('font/NunitoSans-ExtraLight.ttf');
+}
+
+::selection{
+    background-color: transparent;
+    color: #548394;
+  }
+  
+  /* Firefox */
+  ::-moz-selection {
+    background-color: transparent;
+    color: #548394;
+  }
+
+body {
+    margin: 0;
+    background-color: #303030;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(black, transparent);
+    height: 80px;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+}
+
+
+nav img {
+    height: 50px;
+    padding-left: 15px;
+}
+
+#navg {
+    display: flex;
+    border: red;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navg h1 {
+    padding-left: 25px;
+    font-family: NunitoSans;
+    color: whitesmoke;
+}
+
+#navd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: red;
+    width: 500px;
+    padding-right: 100px;
+    font-family: NunitoSans;
+}
+
+#navd a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navd a :hover {
+    color: #bfbfbf;
+}
+
+#bande {
+    background: linear-gradient(to right, transparent, #23BDF2, #9154E1, #FC2C83 , transparent);
+    height: 1px;
+    width: 95%;
+}
+
+#bande2 {
+    background: linear-gradient(to right, transparent, #23BDF2, #9154E1, #FC2C83 , transparent);
+    height: 1px;
+    width: 95%;
+    position: fixed;
+    top: 79px;
+}
+
+#grlogo {
+    border: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#footer {
+    border:  red;
+    height: 32px;
+    background: linear-gradient(to right, transparent, #23BDF2, #9154E1, #FC2C83 , transparent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    margin-top: 99px;
+    opacity: 97%;
+}
+
+#footer img {
+    height: 28px;
+    margin-top: 3px;
+}
+
+#divlumierefooterbas {
+    z-index: -1;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    
+}
+
+#lumierefooterbas {
+    z-index: -2;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    background: linear-gradient(to right, transparent, #23BDF2, #9154E1, #FC2C83 , transparent);
+}
+
+#divlumierefooterhaut {
+    z-index: -1;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    
+}
+
+#lumierefooterhaut {
+    z-index: -2;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 32px;
+    background: linear-gradient(to right, transparent, #23BDF2, #9154E1, #FC2C83 , transparent);
+}
+
+
+#reseaux {
+    border: red;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+
+
+
+ a span {
+     position: absolute;
+     margin-top: -76px;
+     margin-left: -70px;
+     color: whitesmoke;
+     background:#25D366;
+     border: #FC2C83 solid 2px;
+     opacity: 0.9;
+     font-family: NunitoSans;
+     padding:15px;
+     border-radius:3px;
+     box-shadow:0 0 2px rgba(0,0,0,.5);
+     transform:scale(0) rotate(-12deg);
+     transition:all .25s;
+     height: 6px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+ }
+
+
+a:hover span, a:focus span{
+    transform:scale(1) rotate(0);        
+}
+
+#beatmakers div {
+    border:  red;
+    height: 205px;
+    width: 600px;
+}
+
+#beatmakers img {
+    height: 200px;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 5%;
+    opacity: 99%;
+    padding-left: 5px;
+}
+
+#beatmakers {
+    display: flex;
+    flex-direction: row;
+    border: rgb(0, 79, 26);
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    padding-top: 10px;
+    background: linear-gradient(to top right, transparent 2% , #262626 , transparent);
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+}
+
+#lumiereb {
+    z-index: -1;
+    border:  red;
+    background-color: #23BDF2;
+    height: 200px;
+    width: 200px;
+    margin-top: -125px;
+    margin-left: 55px;
+    position: absolute;
+    border-top-right-radius: 100%;
+}
+
+#lumierev {
+    z-index: -1;
+    border:  red;
+    background-color: #9154E1;
+    height: 200px;
+    width: 200px;
+    margin-top: -125px;
+    margin-left: 645px;
+    position: absolute;
+    border-top-right-radius: 100%;
+}
+
+#lumierer {
+    z-index: -1;
+    border:  red;
+    background-color: #FC2C83;
+    height: 200px;
+    width: 200px;
+    margin-top: -120px;
+    margin-left: 1248px;
+    position: absolute;
+    border-top-right-radius: 100%;
+}
+
+#beat1 nav {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #23BDF2 10%, transparent 90%);
+    opacity: 80%;
+}
+
+#beat2 nav {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right,transparent, #9154E1 10%, transparent 90%);
+    opacity: 80%;
+}
+
+#beat3 nav {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right,transparent, #FC2C83 10%, transparent 90%);
+    opacity: 80%;
+}
+
+#beat1 h1 {
+    display: flex;
+    font-family: NunitoSans;
+}
+
+#beat1 section {
+    display: flex;
+    border: red;
+}
+
+#beat2 h1 {
+    display: flex;
+    font-family: NunitoSans;
+}
+
+#beat2 section {
+    display: flex;
+    border: red;
+}
+
+#beatmakerdes img {
+height: 45px;
+padding-left: 5px;
+    
+}
+
+#beat1 #beatmakerdes h1 {
+    
+        color: #cacaca;
+        margin-left: 150px;
+}
+
+#beat1 .reseauxbeat {
+    margin-top: 92px;
+    margin-left: 6px;
+}
+
+#beat2 #beatmakerdes h1 {
+    
+    color: #cacaca;
+    margin-left: 150px;
+}
+
+#beat2 .reseauxbeat {
+margin-top: 92px;
+margin-left: 6px;
+}
+
+
+
+
+#beatmakerdes {
+    border: green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#instrus {
+    border:  rgb(51, 112, 39) ;
+    height: 1000px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#instrus div {
+    border: red;
+    height: 1000px;
+    width: 600px;
+}
+
+#instrus1 div {
+    border: blue;
+    width: 1px;
+    background: linear-gradient(transparent, #23BDF2 10% , transparent);
+    opacity: 70%;
+}
+
+#instrus2 div {
+    border: blue;
+    width: 1px;
+    background: linear-gradient(transparent, #9154E1 10%, transparent);
+    opacity: 70%;
+}
+
+#instrus3 div {
+    border: blue;
+    width: 1px;
+    background: linear-gradient(transparent, #FC2C83 10%, transparent);
+    opacity: 70%;
+}
+
+#instrus1 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: red;
+    width: 600px;
+}
+ #instrus1 {
+     display: flex;
+ }
+
+ #instrus2 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: red;
+    width: 600px;
+ }
+
+ #instrus2 {
+    display: flex;
+}
+
+#instrus3 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: red;
+    width: 600px;
+ }
+
+ #instrus3 {
+    display: flex;
+}
+
+ #instrus iframe {
+
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+
+ }
+
+ .videos {
+     font-family: NunitoSans;
+     border:  rgb(56, 211, 18);
+     width: 580px;
+     height: 160px;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .videos a {
+     text-decoration: none;
+ }
+
+ .videos h2 {
+     color: #cacaca;
+    }
+
+    .videos h4 {
+        color: #cacaca;
+       }
+
+
+ .bandevid1 {
+     width: 100%;
+     height: 1px;
+     background: linear-gradient(to right, transparent, #23BDF2, transparent);
+     opacity: 13%;
+ }
+
+ .bandevid2 {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #9154E1, transparent);
+    opacity: 15%;
+}
+
+.bandevid3 {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #FC2C83, transparent);
+    opacity: 13%;
+}
+
+
+
+#titrepresentation h1 {
+
+    font-family: NunitoSans;
+    color: rgb(213, 213, 213);
+}
+
+#titrepresentation {
+    padding-top: 250px;
+    padding-bottom: 400px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom , transparent, #303030 5%, #18191A );
+}
+
+
+
+#point1 {
+    background-color: whitesmoke;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: 50%;
+    top: 1390px;
+    border-radius: 100%;
+    background-color: #313131;
+}
+
+#point2 {
+    background-color: whitesmoke;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: 50%;
+    top: 1500px;
+    border-radius: 100%;
+    background-color: #313131;
+}
+
+#point3 {
+    background-color: whitesmoke;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: 50%;
+    top: 2600px;
+    border-radius: 100%;
+    background-color: #313131;
+}
+
+#point4 {
+    background-color: whitesmoke;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left: 50%;
+    top: 2710px;
+    border-radius: 100%;
+    background-color: #313131;
+}
+
+#titrepresentation2 h1 {
+
+    font-family: NunitoSans;
+    color: rgb(213, 213, 213);
+}
+
+#titrepresentation2 {
+    padding-top: 250px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 2150px;
+    left: 655px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #18191A;
+    align-items: center;
+}
+
+#presentation img {
+    height: 400px;  
+}
+
+#presentation div {
+    display: flex;
+    text-align: left;
+    margin-bottom: 430px;
+}
+
+#presentation div h3 {
+    font-family: NunitoSans;
+    color: rgb(160, 160, 160) ;
+    width: 400px;
+  
+
+}
+
+
+#encadrement1 {
+
+    background: linear-gradient(to bottom left , #18191A 10%, #303030, #18191A );
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 20%;
+    margin-top: 1px;
+}
+
+#encadrement2 {
+
+    background: linear-gradient(to bottom right , #18191A 10% , #303030, #18191A );
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20%;
+    margin-top: 2px;
+}
+
+#encadrement2 h3 {
+    text-align: right;
+}
+
+#collabs {
+    width: 100%;
+    height: 800px;
+    margin-top: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom , #303030 , #18191A 30%);
+    
+}
+
+#collabs img {
+    height: 200px;
+    border-radius: 50%;
+    border-bottom: solid #121213 2px;
+}
+
+#collabs div {
+    background: radial-gradient(circle at 30% 0%, #303030 50%, transparent);
+    height: 320px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    border-radius: 10%;
+}
+
+#collabs1 :hover {
+    background: radial-gradient(circle at 50% 40% , rgb(35, 189, 242, 40%) ,#303030 70% , transparent );
+}
+
+#collabs2 :hover {
+    background: radial-gradient(circle at 50% 40% , rgb(87, 139, 233, 45%) ,#303030 70% , transparent );
+}
+
+#collabs3 :hover {
+    background: radial-gradient(circle at 50% 40% , rgb(35, 189, 242, 40%) ,#303030 70% , transparent );
+}
+
+#collabs4 :hover {
+    background: radial-gradient(circle at 50% 40% , rgb(35, 189, 242, 40%) ,#303030 70% , transparent );
+}
+
+#collabs div h1 {
+    position: absolute;
+    top: 290px;
+    font-family: NunitoSans;
+    color: #9b9b9b;
+}
+
+
+
+
+
